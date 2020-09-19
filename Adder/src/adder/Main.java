@@ -6,9 +6,11 @@ public class Main {
         try {
             int result = addArguments(args);
             System.out.println(result);
-        } catch (Exception e) {
-            System.err.println("Please enter valid integers");
-        }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.err.println("not enough arguments");
+        } catch (NumberFormatException e) {
+	    System.err.println("Invalid argument");
+	}
     }
 
     private static int addArguments(String[] args) {
