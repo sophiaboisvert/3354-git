@@ -1,0 +1,6 @@
+a) 7
+b) Tuesday Jan 24 22:28:11 2017 -0600
+c) Git status displays the current state of the repostitory and staging area, and doesn't show ant commit records and changes. Git log displays the commit records and history of the repository.
+d) Unstaged files are files that have changes mades to them that are in Git but haven't been marked to be committed. Untracked files aren't in Git. 
+e) Git reset unstages any changes to a given commit. Git checkout switches between branches or previous commits. 
+f) If there are uncommitted changes that conflict with the updating files, git pull will not work and will abort the operation.
