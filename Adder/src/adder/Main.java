@@ -3,13 +3,15 @@ package adder;
 public class Main {
 
     public static void main(String[] args) {
-        try {
+	    try{
             int result = addArguments(args);
             System.out.println(result);
-        } catch (Exception e) {
-            System.err.println("Please provide valid integers to add");
-        }
-    }
+    	    } catch (ArrayIndexOutOfBoundsException e) {
+		    System.err.println("Not enough arguments");
+	    } catch (NumberFormatException e){
+	    	System.err.println("Invalid argument.");
+	    }
+	}
 
     private static int addArguments(String[] args) {
         int sum = 0;
